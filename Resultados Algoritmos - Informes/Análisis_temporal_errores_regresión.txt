@@ -1,0 +1,343 @@
+10.5.3.1 Primera aproximación
+Regresión lineal
+Residuals:
+   Min 	1Q Median 	3Q	Max
+-88.86 -18.76 -13.30   2.20 434.98
+
+Coefficients:
+        	Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 16.12608	2.16755	7.44  1.8e-13 ***
+data$numIds  1.72613	0.08018   21.53  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 54.65 on 1335 degrees of freedom
+Multiple R-squared:  0.2577,	Adjusted R-squared:  0.2571
+F-statistic: 463.5 on 1 and 1335 DF,  p-value: < 2.2e-16
+Regresión logarítmica
+Residuals:
+	Min  	1Q  Median  	3Q 	Max
+-5.0145 -0.5296  0.0504  0.6030  3.2118
+
+Coefficients:
+        	Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  2.18401	0.03948   55.32   <2e-16 ***
+data$numIds  0.05145	0.00146   35.23   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9953 on 1335 degrees of freedom
+Multiple R-squared:  0.4818,	Adjusted R-squared:  0.4814
+F-statistic:  1241 on 1 and 1335 DF,  p-value: < 2.2e-16
+10.5.3.2 Segunda aproximación
+Regresión lineal
+Residuals:
+	Min  	1Q  Median  	3Q 	Max
+-138.82  -15.64   -3.21   13.69  395.64
+
+Coefficients:
+                      	Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         	-5.270e+01  1.447e+01  -3.641 0.000282 ***
+data$numIds          	8.416e-01  9.462e-02   8.894  < 2e-16 ***
+data$DayNumber       	6.574e-02  4.207e-03  15.625  < 2e-16 ***
+data$month02        	-1.852e+01  1.617e+01  -1.146 0.252152    
+data$month03         	1.200e+02  2.481e+01   4.835 1.49e-06 ***
+data$month04         	9.435e+01  3.176e+01   2.971 0.003026 **
+data$month05         	8.312e+01  3.852e+01   2.158 0.031111 *  
+data$month06         	9.393e+01  4.301e+01   2.184 0.029153 *  
+data$month07         	8.407e+01  4.721e+01   1.781 0.075190 .  
+data$month08         	9.354e+01  5.137e+01   1.821 0.068831 .  
+data$month09         	8.791e+01  5.455e+01   1.612 0.107302    
+data$month10         	1.264e+02  5.807e+01   2.177 0.029651 *  
+data$month11         	1.311e+02  6.140e+01   2.135 0.032964 *  
+data$month12         	1.262e+02  6.418e+01   1.967 0.049392 *  
+data$dayOfWeekjueves 	2.643e+00  4.813e+00   0.549 0.582981    
+data$dayOfWeeklunes  	4.684e-01  4.736e+00   0.099 0.921225    
+data$dayOfWeekmartes 	1.751e+00  4.772e+00   0.367 0.713760    
+data$dayOfWeekmiércoles  2.916e+00  4.778e+00   0.610 0.541775    
+data$dayOfWeeksábado 	5.967e-01  4.948e+00   0.121 0.904038    
+data$dayOfWeekviernes	3.470e+00  4.837e+00   0.717 0.473262    
+data$weekNumber01    	2.048e+01  1.575e+01   1.300 0.193816    
+data$weekNumber02    	2.288e+01  1.571e+01   1.456 0.145624    
+data$weekNumber03    	2.029e+01  1.568e+01   1.294 0.195884    
+data$weekNumber04    	2.476e+01  1.596e+01   1.552 0.120909    
+data$weekNumber05    	3.260e+01  2.063e+01   1.580 0.114264    
+data$weekNumber06    	3.831e+01  2.270e+01   1.687 0.091781 .  
+data$weekNumber07    	1.171e+02  2.329e+01   5.030 5.63e-07 ***
+data$weekNumber08    	1.377e+02  2.339e+01   5.884 5.11e-09 ***
+data$weekNumber09    	4.591e+01  2.748e+01   1.671 0.095041 .  
+data$weekNumber10   	-2.494e+01  2.980e+01  -0.837 0.402754    
+data$weekNumber11    	7.479e+00  2.983e+01   0.251 0.802038    
+data$weekNumber12   	-7.320e+01  2.981e+01  -2.456 0.014196 *  
+data$weekNumber13   	-8.586e+01  3.078e+01  -2.790 0.005357 **
+data$weekNumber14   	-6.953e+01  3.591e+01  -1.936 0.053057 .  
+data$weekNumber15   	-6.273e+01  3.589e+01  -1.748 0.080766 .  
+data$weekNumber16   	-5.973e+01  3.604e+01  -1.658 0.097651 .  
+data$weekNumber17   	-5.703e+01  3.620e+01  -1.575 0.115404    
+data$weekNumber18   	-4.812e+01  4.164e+01  -1.156 0.247958    
+data$weekNumber19   	-4.014e+01  4.216e+01  -0.952 0.341282    
+data$weekNumber20   	-4.809e+01  4.206e+01  -1.143 0.253108    
+data$weekNumber21   	-5.303e+01  4.206e+01  -1.261 0.207631    
+data$weekNumber22   	-6.636e+01  4.424e+01  -1.500 0.133931    
+data$weekNumber23   	-6.222e+01  4.634e+01  -1.343 0.179620    
+data$weekNumber24   	-6.559e+01  4.626e+01  -1.418 0.156448    
+data$weekNumber25   	-6.848e+01  4.625e+01  -1.481 0.138970    
+data$weekNumber26   	-6.494e+01  4.692e+01  -1.384 0.166622    
+data$weekNumber27   	-5.857e+01  5.028e+01  -1.165 0.244252    
+data$weekNumber28   	-5.745e+01  5.016e+01  -1.145 0.252329    
+data$weekNumber29   	-5.786e+01  5.020e+01  -1.152 0.249347    
+data$weekNumber30   	-5.829e+01  5.020e+01  -1.161 0.245752    
+data$weekNumber31   	-7.010e+01  5.330e+01  -1.315 0.188664    
+data$weekNumber32   	-7.827e+01  5.408e+01  -1.447 0.148086    
+data$weekNumber33   	-7.963e+01  5.408e+01  -1.472 0.141166    
+data$weekNumber34   	-8.119e+01  5.408e+01  -1.501 0.133518    
+data$weekNumber35   	-7.575e+01  5.516e+01  -1.373 0.169880    
+data$weekNumber36   	-6.661e+01  5.710e+01  -1.167 0.243625    
+data$weekNumber37   	-6.603e+01  5.718e+01  -1.155 0.248425    
+data$weekNumber38   	-6.128e+01  5.713e+01  -1.073 0.283643    
+data$weekNumber39   	-6.323e+01  5.749e+01  -1.100 0.271573    
+data$weekNumber40   	-9.868e+01  6.049e+01  -1.631 0.103044    
+data$weekNumber41   	-8.453e+01  6.050e+01  -1.397 0.162615    
+data$weekNumber42   	-1.044e+02  6.048e+01  -1.726 0.084535 .  
+data$weekNumber43   	-1.018e+02  6.054e+01  -1.682 0.092901 .  
+data$weekNumber44   	-1.031e+02  6.264e+01  -1.645 0.100135    
+data$weekNumber45   	-1.090e+02  6.368e+01  -1.711 0.087264 .  
+data$weekNumber46   	-1.157e+02  6.371e+01  -1.816 0.069677 .  
+data$weekNumber47   	-1.107e+02  6.368e+01  -1.738 0.082380 .  
+data$weekNumber48   	-1.103e+02  6.470e+01  -1.705 0.088396 .  
+data$weekNumber49   	-1.097e+02  6.638e+01  -1.653 0.098651 .  
+data$weekNumber50   	-7.140e+01  6.641e+01  -1.075 0.282519    
+data$weekNumber51   	-1.105e+02  6.639e+01  -1.665 0.096217 .  
+data$weekNumber52   	-1.040e+02  6.660e+01  -1.561 0.118686    
+data$weekNumber53   	-1.243e+02  7.961e+01  -1.561 0.118804    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 43.95 on 1264 degrees of freedom
+Multiple R-squared:  0.5454,	Adjusted R-squared:  0.5196
+F-statistic: 21.07 on 72 and 1264 DF,  p-value: < 2.2e-16
+Regresión logarítmica
+Residuals:
+ 	Min   	1Q   Median   	3Q  	Max
+-2.61614 -0.40380  0.03195  0.48649  2.43930
+
+Coefficients:
+                      	Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          	3.894e-01  2.408e-01   1.617 0.106038    
+data$numIds          	2.447e-02  1.569e-03  15.592  < 2e-16 ***
+data$DayNumber       	1.982e-03  6.954e-05  28.496  < 2e-16 ***
+data$dayOfWeekjueves 	3.348e-01  7.948e-02   4.212 2.70e-05 ***
+data$dayOfWeeklunes  	2.336e-01  7.902e-02   2.956 0.003171 **
+data$dayOfWeekmartes 	3.233e-01  7.943e-02   4.069 5.00e-05 ***
+data$dayOfWeekmiércoles  2.819e-01  7.922e-02   3.558 0.000387 ***
+data$dayOfWeeksábado 	1.013e-01  8.065e-02   1.256 0.209479    
+data$dayOfWeekviernes	3.174e-01  7.940e-02   3.998 6.77e-05 ***
+data$weekNumber01    	6.349e-01  2.632e-01   2.412 0.015994 *  
+data$weekNumber02    	6.812e-01  2.625e-01   2.595 0.009573 **
+data$weekNumber03    	6.200e-01  2.620e-01   2.367 0.018094 *  
+data$weekNumber04    	6.080e-01  2.633e-01   2.310 0.021068 *  
+data$weekNumber05    	4.535e-01  2.620e-01   1.731 0.083685 .  
+data$weekNumber06    	5.311e-01  2.636e-01   2.014 0.044175 *  
+data$weekNumber07    	1.473e+00  2.772e-01   5.313 1.27e-07 ***
+data$weekNumber08    	1.593e+00  2.773e-01   5.744 1.16e-08 ***
+data$weekNumber09    	1.476e+00  2.738e-01   5.392 8.28e-08 ***
+data$weekNumber10    	1.200e+00  2.682e-01   4.473 8.40e-06 ***
+data$weekNumber11    	1.090e+00  2.696e-01   4.044 5.58e-05 ***
+data$weekNumber12    	7.206e-01  2.695e-01   2.673 0.007608 **
+data$weekNumber13    	6.797e-01  2.711e-01   2.507 0.012283 *  
+data$weekNumber14    	4.969e-01  2.690e-01   1.847 0.064996 .  
+data$weekNumber15    	6.700e-01  2.679e-01   2.500 0.012529 *  
+data$weekNumber16    	4.927e-01  2.723e-01   1.809 0.070609 .  
+data$weekNumber17    	7.261e-01  2.700e-01   2.689 0.007259 **
+data$weekNumber18    	5.260e-01  2.655e-01   1.981 0.047761 *  
+data$weekNumber19    	1.096e+00  2.699e-01   4.060 5.21e-05 ***
+data$weekNumber20    	1.013e+00  2.681e-01   3.780 0.000164 ***
+data$weekNumber21    	4.860e-01  2.667e-01   1.822 0.068705 .  
+data$weekNumber22    	9.606e-02  2.737e-01   0.351 0.725638    
+data$weekNumber23    	3.305e-01  2.699e-01   1.225 0.220923    
+data$weekNumber24    	5.460e-01  2.686e-01   2.033 0.042271 *  
+data$weekNumber25    	6.675e-01  2.680e-01   2.491 0.012880 *  
+data$weekNumber26    	5.137e-01  2.693e-01   1.908 0.056655 .  
+data$weekNumber27    	1.377e-01  2.728e-01   0.505 0.613889    
+data$weekNumber28    	4.006e-01  2.670e-01   1.500 0.133812    
+data$weekNumber29    	4.187e-01  2.673e-01   1.566 0.117494    
+data$weekNumber30    	4.225e-01  2.635e-01   1.603 0.109174    
+data$weekNumber31    	5.686e-02  2.644e-01   0.215 0.829753    
+data$weekNumber32    	6.293e-03  2.668e-01   0.024 0.981191    
+data$weekNumber33    	3.422e-02  2.670e-01   0.128 0.898042    
+data$weekNumber34   	-6.514e-03  2.640e-01  -0.025 0.980321    
+data$weekNumber35    	7.945e-02  2.649e-01   0.300 0.764309    
+data$weekNumber36    	4.255e-01  2.640e-01   1.612 0.107278    
+data$weekNumber37    	3.938e-01  2.686e-01   1.466 0.142828    
+data$weekNumber38    	4.093e-01  2.653e-01   1.542 0.123226    
+data$weekNumber39    	5.809e-01  2.643e-01   2.198 0.028140 *  
+data$weekNumber40    	2.179e-01  2.638e-01   0.826 0.409030    
+data$weekNumber41    	4.091e-01  2.653e-01   1.542 0.123251    
+data$weekNumber42    	2.986e-01  2.652e-01   1.126 0.260391    
+data$weekNumber43    	6.335e-01  2.665e-01   2.377 0.017616 *  
+data$weekNumber44    	5.993e-01  2.667e-01   2.247 0.024815 *  
+data$weekNumber45    	3.440e-01  2.624e-01   1.311 0.190088    
+data$weekNumber46    	4.110e-01  2.635e-01   1.560 0.119099    
+data$weekNumber47    	4.941e-01  2.622e-01   1.884 0.059756 .  
+data$weekNumber48    	4.851e-01  2.623e-01   1.849 0.064661 .  
+data$weekNumber49    	5.069e-01  2.622e-01   1.934 0.053372 .  
+data$weekNumber50    	7.722e-01  2.634e-01   2.931 0.003439 **
+data$weekNumber51    	5.929e-01  2.662e-01   2.228 0.026082 *  
+data$weekNumber52    	5.849e-01  2.702e-01   2.165 0.030584 *  
+data$weekNumber53    	5.637e-01  7.695e-01   0.733 0.463933    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7343 on 1275 degrees of freedom
+Multiple R-squared:  0.7306,	Adjusted R-squared:  0.7177
+F-statistic: 56.68 on 61 and 1275 DF,  p-value: < 2.2e-16
+10.5.3.2 Tercera aproximación
+Regresión lineal
+Residuals:
+	Min  	1Q  Median  	3Q 	Max
+-35.678  -9.249  -1.101   6.945  84.343
+
+Coefficients:
+           	Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -18.954209   4.695537  -4.037 5.76e-05 ***
+numIds     	1.262513   0.032687  38.624  < 2e-16 ***
+DayNumber  	0.030888   0.001443  21.406  < 2e-16 ***
+weekNumber01  13.698800   5.356551   2.557 0.010665 *  
+weekNumber02  12.445794   5.341178   2.330 0.019959 *  
+weekNumber03  12.911364   5.329923   2.422 0.015561 *  
+weekNumber04  16.093186   5.421188   2.969 0.003050 **
+weekNumber05  17.657790   6.982185   2.529 0.011564 *  
+weekNumber06  19.476860   7.677394   2.537 0.011307 *  
+weekNumber07  36.598237   8.066459   4.537 6.26e-06 ***
+weekNumber08  27.378482   8.291196   3.302 0.000987 ***
+weekNumber09  34.550895   9.826057   3.516 0.000454 ***
+weekNumber10  34.246968  11.451419   2.991 0.002840 **
+weekNumber11  32.555718  11.481549   2.835 0.004651 **
+weekNumber12  29.375809  11.309290   2.597 0.009503 **
+weekNumber13  30.647554  11.547068   2.654 0.008054 **
+weekNumber14  36.771711  13.102798   2.806 0.005089 **
+weekNumber15  40.700729  13.102759   3.106 0.001938 **
+weekNumber16  42.259326  13.142056   3.216 0.001336 **
+weekNumber17  44.136247  13.183098   3.348 0.000839 ***
+weekNumber18  45.464768  14.853122   3.061 0.002254 **
+weekNumber19  50.457144  15.018400   3.360 0.000804 ***
+weekNumber20  46.102121  14.999149   3.074 0.002161 **
+weekNumber21  40.703727  14.991505   2.715 0.006718 **
+weekNumber22  25.712911  15.639256   1.644 0.100406    
+weekNumber23  23.297181  16.289384   1.430 0.152912    
+weekNumber24  23.089628  16.273400   1.419 0.156195    
+weekNumber25  21.498134  16.267486   1.322 0.186568    
+weekNumber26  25.113666  16.456326   1.526 0.127248    
+weekNumber27  25.702050  17.527302   1.466 0.142795    
+weekNumber28  27.385042  17.476752   1.567 0.117386    
+weekNumber29  26.655018  17.478161   1.525 0.127505    
+weekNumber30  27.678729  17.475957   1.584 0.113493    
+weekNumber31  14.224765  18.418667   0.772 0.440085    
+weekNumber32   8.139618  18.670226   0.436 0.662937    
+weekNumber33   6.540393  18.671325   0.350 0.726181    
+weekNumber34   4.468422  18.659386   0.239 0.810779    
+weekNumber35   4.721286  18.954062   0.249 0.803332    
+weekNumber36  13.645171  19.593884   0.696 0.486311    
+weekNumber37  15.873063  19.610789   0.809 0.418439    
+weekNumber38  19.841596  19.598635   1.012 0.311548    
+weekNumber39  15.361027  19.691410   0.780 0.435490    
+weekNumber40 -10.263240  20.832655  -0.493 0.622347    
+weekNumber41   8.956770  20.825111   0.430 0.667202    
+weekNumber42 -10.905099  20.824052  -0.524 0.600597    
+weekNumber43 -12.804878  20.833746  -0.615 0.538918    
+weekNumber44 -12.607727  21.430826  -0.588 0.556440    
+weekNumber45 -23.828181  21.753443  -1.095 0.273567    
+weekNumber46 -24.934034  21.746628  -1.147 0.251783    
+weekNumber47 -20.507566  21.741727  -0.943 0.345746    
+weekNumber48 -24.262314  22.003252  -1.103 0.270387    
+weekNumber49 -25.299015  22.510954  -1.124 0.261295    
+weekNumber50 -19.957713  22.547213  -0.885 0.376248    
+weekNumber51 -23.490550  22.520092  -1.043 0.297111    
+weekNumber52 -18.580669  22.559683  -0.824 0.410314    
+weekNumber53 -31.710528  26.857036  -1.181 0.237944    
+month02   	-9.356344   5.469722  -1.711 0.087413 .  
+month03  	-17.309694   9.847533  -1.758 0.079036 .  
+month04  	-25.971959  11.859532  -2.190 0.028715 *  
+month05  	-28.115468  13.913668  -2.021 0.043527 *  
+month06  	-12.139881  15.272690  -0.795 0.426840    
+month07  	-18.162723  16.565462  -1.096 0.273110    
+month08   	-4.222955  17.823876  -0.237 0.812753    
+month09   	-4.876527  18.796472  -0.259 0.795340    
+month10   	22.435139  20.077351   1.117 0.264027    
+month11   	31.488415  21.038823   1.497 0.134733    
+month12   	32.808145  21.831437   1.503 0.133150    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 14.96 on 1227 degrees of freedom
+Multiple R-squared:  0.8327,	Adjusted R-squared:  0.8237
+F-statistic: 92.52 on 66 and 1227 DF,  p-value: < 2.2e-16
+Regresión logarítmica
+Residuals:
+ 	Min   	1Q   Median   	3Q  	Max
+-2.54902 -0.36743  0.05373  0.48755  1.73461
+
+Coefficients:
+           	Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   9.334e-01  2.203e-01   4.237 2.44e-05 ***
+numIds    	3.290e-02  1.527e-03  21.538  < 2e-16 ***
+DayNumber 	1.587e-03  6.713e-05  23.636  < 2e-16 ***
+weekNumber01  5.600e-01  2.516e-01   2.226 0.026197 *  
+weekNumber02  5.300e-01  2.508e-01   2.113 0.034803 *  
+weekNumber03  5.279e-01  2.503e-01   2.109 0.035152 *  
+weekNumber04  5.161e-01  2.516e-01   2.051 0.040468 *  
+weekNumber05  3.564e-01  2.503e-01   1.424 0.154803    
+weekNumber06  4.174e-01  2.519e-01   1.657 0.097737 .  
+weekNumber07  1.002e+00  2.768e-01   3.620 0.000307 ***
+weekNumber08  8.532e-01  2.907e-01   2.935 0.003394 **
+weekNumber09  6.395e-01  2.831e-01   2.259 0.024066 *  
+weekNumber10  5.628e-01  2.725e-01   2.065 0.039118 *  
+weekNumber11  2.503e-01  2.753e-01   0.909 0.363473    
+weekNumber12  4.280e-01  2.597e-01   1.648 0.099600 .  
+weekNumber13  5.121e-01  2.590e-01   1.977 0.048230 *  
+weekNumber14  3.494e-01  2.571e-01   1.359 0.174320    
+weekNumber15  4.769e-01  2.562e-01   1.861 0.062955 .  
+weekNumber16  2.485e-01  2.604e-01   0.954 0.340067    
+weekNumber17  5.049e-01  2.582e-01   1.955 0.050794 .  
+weekNumber18  2.982e-01  2.537e-01   1.176 0.239926    
+weekNumber19  8.153e-01  2.580e-01   3.160 0.001618 **
+weekNumber20  8.065e-01  2.564e-01   3.145 0.001699 **
+weekNumber21  2.664e-01  2.550e-01   1.045 0.296297    
+weekNumber22 -1.297e-01  2.615e-01  -0.496 0.620076    
+weekNumber23  4.158e-02  2.580e-01   0.161 0.872007    
+weekNumber24  3.105e-01  2.568e-01   1.209 0.226833    
+weekNumber25  4.593e-01  2.562e-01   1.793 0.073225 .  
+weekNumber26  3.289e-01  2.573e-01   1.278 0.201376    
+weekNumber27  1.403e-02  2.632e-01   0.053 0.957514    
+weekNumber28  1.644e-01  2.553e-01   0.644 0.519638    
+weekNumber29  1.748e-01  2.554e-01   0.684 0.493859    
+weekNumber30  2.157e-01  2.518e-01   0.856 0.391906    
+weekNumber31 -1.223e-01  2.526e-01  -0.484 0.628384    
+weekNumber32 -1.331e-01  2.550e-01  -0.522 0.601910    
+weekNumber33 -1.165e-01  2.551e-01  -0.457 0.647834    
+weekNumber34 -1.464e-01  2.522e-01  -0.580 0.561883    
+weekNumber35 -1.964e-02  2.540e-01  -0.077 0.938380    
+weekNumber36  2.760e-01  2.524e-01   1.094 0.274348    
+weekNumber37  2.672e-01  2.566e-01   1.041 0.298014    
+weekNumber38  2.749e-01  2.536e-01   1.084 0.278511    
+weekNumber39  4.348e-01  2.554e-01   1.703 0.088907 .  
+weekNumber40  2.684e-02  2.535e-01   0.106 0.915709    
+weekNumber41  2.723e-01  2.534e-01   1.074 0.282852    
+weekNumber42  1.711e-01  2.534e-01   0.675 0.499619    
+weekNumber43  4.203e-01  2.548e-01   1.649 0.099307 .  
+weekNumber44  4.693e-01  2.549e-01   1.841 0.065858 .  
+weekNumber45  1.776e-01  2.521e-01   0.704 0.481346    
+weekNumber46  3.069e-01  2.518e-01   1.219 0.223143    
+weekNumber47  3.791e-01  2.505e-01   1.513 0.130468    
+weekNumber48  3.557e-01  2.506e-01   1.419 0.156053    
+weekNumber49  3.951e-01  2.505e-01   1.577 0.114966    
+weekNumber50  5.640e-01  2.563e-01   2.200 0.027983 *  
+weekNumber51  5.112e-01  2.544e-01   2.009 0.044702 *  
+weekNumber52  5.104e-01  2.580e-01   1.978 0.048128 *  
+weekNumber53  3.594e-01  7.337e-01   0.490 0.624334    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7024 on 1238 degrees of freedom
+Multiple R-squared:  0.7295,	Adjusted R-squared:  0.7175
+F-statistic: 60.72 on 55 and 1238 DF,  p-value: < 2.2e-16

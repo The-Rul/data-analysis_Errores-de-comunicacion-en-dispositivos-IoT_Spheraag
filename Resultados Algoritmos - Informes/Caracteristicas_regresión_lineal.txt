@@ -1,0 +1,179 @@
+Linear regression
+Residuals:
+	Min  	1Q  Median  	3Q 	Max
+-1959.6   -16.1	-7.1 	0.8  8808.3
+
+Coefficients: (53 not defined because of singularities)
+                                            	Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                               	-1.011e+02  3.261e+02  -0.310  0.75662    
+InternalNameATLAS_2G                       	7.889e+01  2.282e+02   0.346  0.72963    
+InternalNameATLAS_2G_SP                    	1.120e+02  3.964e+02   0.283  0.77756    
+InternalNameATLAS_2G_SPB                   	5.518e+01  1.130e+02   0.488  0.62546    
+InternalNameATLAS_2S                       	2.082e+03  3.507e+02   5.936 3.26e-09 ***
+InternalNameATLAS_2SP                      	9.551e+01  1.703e+02   0.561  0.57487    
+InternalNameATLAS_2SPB                     	8.667e+01  1.547e+02   0.560  0.57530    
+DID                                       	-2.655e-01  2.884e-01  -0.921  0.35728    
+LID                                        	1.294e+00  9.179e-01   1.409  0.15881    
+Firmware0.0.39                             	1.506e+01  2.142e+02   0.070  0.94393    
+Firmware0.0.40                             	5.524e+00  1.279e+02   0.043  0.96556    
+Firmware0.0.43                             	1.615e+01  9.757e+01   0.166  0.86853    
+Firmware0.0.44                             	4.451e+01  3.752e+02   0.119  0.90557    
+Firmware0.0.50                             	1.253e+01  9.998e+01   0.125  0.90029    
+Firmware0.0.60                             	1.382e+01  9.642e+01   0.143  0.88605    
+Firmware0.0.601                            	1.382e+01  2.134e+02   0.065  0.94836    
+Firmware0.0.63                             	4.681e+00  2.142e+02   0.022  0.98257    
+Firmware0.0.68                             	4.300e+01  1.088e+02   0.395  0.69273    
+Firmware0.0.68USA1                        	-5.784e+00  1.577e+02  -0.037  0.97075    
+Firmware0.0.71                             	1.686e+02  2.136e+02   0.789  0.42992    
+Firmware0.1.03                             	6.869e+01  2.163e+02   0.318  0.75078    
+Firmware0.1.08                             	3.704e+01  2.154e+02   0.172  0.86348    
+Firmware0.1.12                            	-2.002e+03  3.375e+02  -5.931 3.36e-09 ***
+Firmware0.1.12USA                         	-2.035e+03  4.166e+02  -4.884 1.09e-06 ***
+Firmware0.1.15                            	-1.993e+03  3.373e+02  -5.910 3.82e-09 ***
+Firmware0.1.15AUS                          	2.025e+03  2.340e+02   8.650  < 2e-16 ***
+Firmware0.1.15USA                         	-2.016e+03  4.160e+02  -4.848 1.31e-06 ***
+Firmware0.1.17                             	5.622e+00  1.367e+02   0.041  0.96720    
+Firmware0.1.17USA                         	-2.596e+01  1.753e+02  -0.148  0.88223    
+Firmware0.1.20                            	-1.980e+03  3.869e+02  -5.117 3.30e-07 ***
+Firmware0.1.20USA                         	-2.032e+01  1.971e+02  -0.103  0.91789    
+Firmware0.1.21MBomba                      	-8.889e+02  3.427e+02  -2.594  0.00953 **
+Firmware0.1.23V8                           	1.394e+01  2.344e+02   0.059  0.95259    
+Firmware0.1.27V2                          	-3.800e+01  2.361e+02  -0.161  0.87214    
+Firmware0.1.27V7                           	5.812e+00  1.655e+02   0.035  0.97198    
+Firmware0.1.28V8                                  	NA     	NA  	NA   	NA    
+Firmware0.1.30V10                          	3.449e+01  2.217e+02   0.156  0.87638    
+Firmware0.1.30V8                           	2.138e+01  2.218e+02   0.096  0.92319    
+Firmware0.1.31V10                         	-5.302e+00  1.241e+02  -0.043  0.96591    
+Firmware0.1.31V10AUS                       	1.847e+01  3.795e+02   0.049  0.96117    
+Firmware0.1.31V10USA                       	1.152e+01  2.425e+02   0.048  0.96212    
+Firmware0.1.31V7                           	5.180e+01  2.246e+02   0.231  0.81765    
+Firmware0.1.31V7AUS                       	-1.974e+03  2.340e+02  -8.433  < 2e-16 ***
+Firmware0.1.33V11                          	1.457e+01  1.134e+02   0.128  0.89780    
+Firmware0.1.33V11USA                       	1.679e+01  2.045e+02   0.082  0.93458    
+Firmware0.1.341V7AUS                              	NA     	NA  	NA   	NA    
+Firmware0.1.34V11                          	6.546e+00  1.137e+02   0.058  0.95411    
+Firmware0.1.35V11                          	9.610e+01  1.764e+02   0.545  0.58591    
+Firmware0.1.36V11                          	2.553e+00  1.147e+02   0.022  0.98224    
+Firmware0.1.37V11                          	6.772e+00  1.113e+02   0.061  0.95150    
+Firmware0.1.37V11AUS                       	1.697e+01  3.290e+02   0.052  0.95885    
+Firmware0.1.37V11USA                       	2.248e+00  1.508e+02   0.015  0.98810    
+Firmware0.2.12                            	-7.899e+00  2.020e+02  -0.039  0.96881    
+Firmware0.2.16                            	-5.400e+00  1.996e+02  -0.027  0.97842    
+Firmware0.2.17                            	-2.102e+01  3.786e+02  -0.056  0.95573    
+Firmware0.2.17F                           	-4.393e+01  3.826e+02  -0.115  0.90858    
+Firmware0.2.17ORANG                               	NA     	NA  	NA   	NA    
+Firmware0.2.17Tur                                 	NA     	NA  	NA   	NA    
+Firmware0.2.30V10                          	4.439e+01  1.063e+02   0.418  0.67619    
+Firmware0.2.31V10                          	7.733e+01  2.007e+02   0.385  0.70005    
+Firmware0.2.32V10                          	5.604e+01  2.214e+02   0.253  0.80017    
+Firmware0.2.33V11                          	1.857e+01  6.373e+01   0.291  0.77073    
+Firmware0.2.34V11                          	3.588e+01  4.880e+01   0.735  0.46223    
+Firmware0.2.36V11                          	2.936e+01  4.505e+01   0.652  0.51461    
+Firmware0.2.36V11Tur                       	2.644e+01  3.693e+02   0.072  0.94293    
+Firmware0.2.37V11                          	2.897e+01  5.280e+01   0.549  0.58336    
+Firmware0.2.40V12                                 	NA     	NA  	NA   	NA    
+Firmware0.3.40V12BC660                    	-2.001e+01  1.121e+02  -0.178  0.85840    
+Firmware0.3.41V12BC660Isr                  	2.111e+00  3.788e+02   0.006  0.99555    
+Firmware0.3.41V12BC660Por                         	NA     	NA  	NA   	NA    
+ModemBC66NBR01A10                          	7.122e+01  3.467e+01   2.054  0.04006 *  
+ModemBC66NBR01A11                                 	NA     	NA  	NA   	NA    
+ModemM66FBR03A07                           	7.234e-01  5.919e+01   0.012  0.99025    
+ModemM66FBR03A08                          	-2.596e+00  6.909e+01  -0.038  0.97003    
+ModemM66FCR01A02BT                         	6.243e-01  4.043e+01   0.015  0.98768    
+ModemM66FCR01A03BT                                	NA     	NA  	NA   	NA    
+Operator1nce                              	-2.161e-01  4.315e+01  -0.005  0.99601    
+OperatorMovistar                          	-2.982e+00  3.682e+01  -0.081  0.93547    
+OperatorTelstra                                   	NA     	NA  	NA   	NA    
+OperatorVodafone                           	9.425e+00  3.814e+01   0.247  0.80485    
+OperatorVTurkey                            	4.511e+00  7.746e+01   0.058  0.95357    
+CountryAndorra                             	5.036e+01  3.643e+02   0.138  0.89008    
+CountryArgentina                           	7.081e-01  3.843e+02   0.002  0.99853    
+CountryAustralia                                  	NA     	NA  	NA   	NA    
+CountryAustria                             	1.321e+01  3.202e+02   0.041  0.96711    
+CountryAzerbaijan                          	1.725e+00  2.179e+02   0.008  0.99368    
+CountryBelgium                             	4.223e+00  3.252e+02   0.013  0.98964    
+CountryBrazil                              	2.403e+01  2.733e+02   0.088  0.92996    
+CountryCosta Rica                          	2.077e+01  3.024e+02   0.069  0.94524    
+CountryCote d Ivoire                       	2.998e+02  2.396e+02   1.251  0.21096    
+CountryCroatia                            	-9.763e+00  3.159e+02  -0.031  0.97535    
+CountryChile                               	2.714e+01  3.839e+02   0.071  0.94365    
+CountryFrance                              	1.360e+01  3.077e+02   0.044  0.96476    
+CountryGermany                            	-6.051e+00  3.063e+02  -0.020  0.98424    
+CountryGreece                              	2.150e+01  3.604e+02   0.060  0.95244    
+CountryGuadeloupe                          	5.734e+00  2.407e+02   0.024  0.98099    
+CountryGuatemala                           	1.720e+01  2.458e+02   0.070  0.94421    
+CountryIndonesia                           	2.160e+01  2.738e+02   0.079  0.93711    
+CountryIsrael                                     	NA     	NA  	NA   	NA    
+CountryItaly                               	7.364e-01  3.061e+02   0.002  0.99808    
+CountryLibya                               	1.106e+01  3.454e+02   0.032  0.97446    
+CountryMartinique                         	-9.788e+00  2.737e+02  -0.036  0.97148    
+CountryMexico                              	2.214e+01  3.054e+02   0.072  0.94222    
+CountryNetherlands                         	1.286e+01  3.060e+02   0.042  0.96648    
+CountryPoland                              	1.882e+01  3.628e+02   0.052  0.95863    
+CountryPortugal                            	5.214e+00  3.057e+02   0.017  0.98639    
+CountryRomania                             	1.912e+01  3.611e+02   0.053  0.95777    
+CountrySpain                               	1.327e+01  3.062e+02   0.043  0.96543    
+CountrySuriname                           	-1.094e+01  2.141e+02  -0.051  0.95925    
+CountrySweden                             	-1.150e-01  3.601e+02   0.000  0.99975    
+CountrySwitzerland                         	3.840e-01  3.068e+02   0.001  0.99900    
+CountryThe Gambia                         	-3.109e+00  2.007e+02  -0.015  0.98764    
+CountryTürkiye                            	-6.835e+00  1.930e+02  -0.035  0.97175    
+CountryUnited Kingdom                     	-5.333e+00  3.094e+02  -0.017  0.98625    
+CountryUnited States                       	3.018e+01  3.453e+02   0.087  0.93036    
+CountryZambia                                     	NA     	NA  	NA   	NA    
+FID                                       	-5.005e-03  4.903e-03  -1.021  0.30751    
+LatitudeGrupo3 (Zona Subtropical +)       	-1.777e+00  9.847e+00  -0.180  0.85678    
+LatitudeGrupo4 (Zona Tropical)             	2.247e+00  2.366e+02   0.009  0.99242    
+LatitudeGrupo5 (Zona Subtropical -)               	NA     	NA  	NA   	NA    
+LongitudeGrupo B (America Central)        	-3.701e+00  1.282e+02  -0.029  0.97698    
+LongitudeGrupo C (America Este / Atlantico)   -1.552e+00  1.672e+01  -0.093  0.92604    
+LongitudeGrupo D (Europa / Africa Oeste)          	NA     	NA  	NA   	NA    
+LongitudeGrupo E (Asia Oeste / Medio Oriente)     	NA     	NA  	NA   	NA    
+LongitudeGrupo F (Asia Este / Oceania)            	NA     	NA  	NA   	NA    
+TimeZoneAfrica/Banjul                             	NA     	NA  	NA   	NA    
+TimeZoneAfrica/Lusaka                             	NA     	NA  	NA   	NA    
+TimeZoneAfrica/Tripoli                            	NA     	NA  	NA   	NA    
+TimeZoneAmerica/Argentina/Mendoza                 	NA     	NA  	NA   	NA    
+TimeZoneAmerica/Costa_Rica                        	NA     	NA  	NA   	NA    
+TimeZoneAmerica/Chicago                   	-1.044e+01  1.378e+02  -0.076  0.93959    
+TimeZoneAmerica/Guadeloupe                        	NA     	NA  	NA   	NA    
+TimeZoneAmerica/Guatemala                         	NA     	NA  	NA   	NA    
+TimeZoneAmerica/Los_Angeles                	5.078e+00  1.185e+02   0.043  0.96581    
+TimeZoneAmerica/Martinique                        	NA     	NA  	NA   	NA    
+TimeZoneAmerica/Mexico_City                       	NA     	NA  	NA   	NA    
+TimeZoneAmerica/New_York                          	NA     	NA  	NA   	NA    
+TimeZoneAmerica/Paramaribo                        	NA     	NA  	NA   	NA    
+TimeZoneAmerica/Santiago                          	NA     	NA  	NA   	NA    
+TimeZoneAmerica/Sao_Paulo                         	NA     	NA  	NA   	NA    
+TimeZoneAsia/Baku                                 	NA     	NA  	NA   	NA    
+TimeZoneAsia/Jakarta                              	NA     	NA  	NA   	NA    
+TimeZoneAsia/Jerusalem                            	NA     	NA  	NA   	NA    
+TimeZoneAtlantic/Canary                   	-1.200e+01  6.084e+01  -0.197  0.84367    
+TimeZoneAustralia/Adelaide                        	NA     	NA  	NA   	NA    
+TimeZoneAustralia/Brisbane                        	NA     	NA  	NA   	NA    
+TimeZoneAustralia/Perth                           	NA     	NA  	NA   	NA    
+TimeZoneEtc/GMT-3                                 	NA     	NA  	NA   	NA    
+TimeZoneEurope/Amsterdam                          	NA     	NA  	NA   	NA    
+TimeZoneEurope/Andorra                            	NA     	NA  	NA   	NA    
+TimeZoneEurope/Athens                             	NA     	NA  	NA   	NA    
+TimeZoneEurope/Berlin                             	NA     	NA  	NA   	NA    
+TimeZoneEurope/Brussels                           	NA     	NA  	NA   	NA    
+TimeZoneEurope/Bucharest                          	NA     	NA  	NA   	NA    
+TimeZoneEurope/Istanbul                           	NA     	NA  	NA   	NA    
+TimeZoneEurope/Lisbon                             	NA     	NA  	NA   	NA    
+TimeZoneEurope/London                             	NA     	NA  	NA   	NA    
+TimeZoneEurope/Madrid                             	NA     	NA  	NA   	NA    
+TimeZoneEurope/Paris                              	NA     	NA  	NA   	NA    
+TimeZoneEurope/Rome                               	NA     	NA  	NA   	NA    
+TimeZoneEurope/Stockholm                          	NA     	NA  	NA   	NA    
+TimeZoneEurope/Vienna                             	NA     	NA  	NA   	NA    
+TimeZoneEurope/Warsaw                             	NA     	NA  	NA   	NA    
+TimeZoneEurope/Zagreb                             	NA     	NA  	NA   	NA    
+TimeZoneEurope/Zurich                             	NA     	NA  	NA   	NA    
+Age                                        	1.699e-02  1.620e-02   1.049  0.29437    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 190.5 on 2925 degrees of freedom
+Multiple R-squared:  0.2506,	Adjusted R-squared:  0.2219
+F-statistic: 8.734 on 112 and 2925 DF,  p-value: < 2.2e-16
